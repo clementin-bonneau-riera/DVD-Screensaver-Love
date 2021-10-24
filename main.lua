@@ -68,5 +68,3 @@ function love.draw()
   love.graphics.print(initSpeed.x, 10, 10)
   love.graphics.print(initSpeed.y, 10, 40)
 end
-
-end
