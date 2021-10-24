@@ -69,9 +69,4 @@ function love.draw()
   love.graphics.print(initSpeed.y, 10, 40)
 end
 
-function love.keypressed(key)
-	if key == "f11" then
-		fullscreen = not fullscreen
-		love.window.setFullscreen(fullscreen, fstype)
-	end
 end
