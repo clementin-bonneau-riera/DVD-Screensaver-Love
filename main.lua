@@ -1,4 +1,6 @@
 function love.load()
+  love.window.setTitle("DVD Screensaver")
+
   logo = {}
   logo.image =love.graphics.newImage("assets/DVD_logo.png")
   logo.width = 206
@@ -65,4 +67,11 @@ function love.draw()
   love.graphics.setFont(fontPressStart2P)
   love.graphics.print(initSpeed.x, 10, 10)
   love.graphics.print(initSpeed.y, 10, 40)
+end
+
+function love.keypressed(key)
+	if key == "f11" then
+		fullscreen = not fullscreen
+		love.window.setFullscreen(fullscreen, fstype)
+	end
 end
