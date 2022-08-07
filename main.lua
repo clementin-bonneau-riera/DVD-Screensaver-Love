@@ -57,6 +57,13 @@ function love.update(dt)
     initSpeed.y = 4
   end
 
+  function love.keypressed(key, scancode, isrepeat)
+    if key == "f11" then
+      fullscreen = not fullscreen
+      love.window.setFullscreen(fullscreen, "exclusive")
+    end
+  end
+
 end
 
 
